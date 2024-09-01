@@ -1,0 +1,287 @@
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #f4f2ee !important;
+        overflow: hidden;
+    }
+  
+
+  nav{
+    background-color: white;
+  }
+  nav .form-control{
+    width: 20%;
+    background-color: #edf3f8;
+  }
+
+input.search-w{
+  width: 60%;
+transition: 1s all ;
+border-radius: 5px;
+background-color: #0a65c013;
+}
+.search-w:focus{
+  width: 80% ;
+}
+.search-box{
+  /* width: % ; */
+}
+
+
+  nav .search-bar {
+ width: 78%;
+ background-color: #edf3f8;
+}
+nav .search-bar:focus{
+outline: none;
+border: none;
+
+}
+  .navbar-toggler-icon {
+    border: 1px solid white;
+  }
+  .search-icon {
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  .nav-link {
+    position: relative;
+    transition: color 0.3s;
+    padding-block: 0 !important;
+  }
+  .active {
+    color: black !important;
+    position: relative;
+  }
+
+
+  .active::after {
+    content: '';
+    background-color: #0073b1;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    transition: width 0.3s;
+  }
+  .active:hover::after,
+  .active:focus::after {
+    width: 100%;
+  }
+  .nav-item span {
+    display: none;
+  }
+    /* ~nested drop down menu */
+    .nested-dropdown-menu:hover{
+      display: block !important;
+    }
+    .dropdown-submenu {
+      position: relative;
+  }
+  .dropdown-submenu .dropdown-menu {
+      top: 100%;
+      right: 20%;
+      margin-top: 0;
+      margin-left: 0;
+  }
+  .dropdown-submenu:hover .dropdown-menu {
+      display: block;
+  }
+  @media (min-width: 992px) {
+    .nav-item span {
+      display: inline;
+    }
+  }
+
+  
+  /* &header */
+  #accName{
+    color: rgb(42, 41, 41);
+text-transform: capitalize;
+  }
+  #accName:hover{
+text-decoration: none;
+color: rgb(42, 41, 41);
+text-transform: capitalize;
+  }
+
+
+   /* &Side */
+  .sidebar {
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 15px;
+  }
+  .main-content {
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 15px;
+  }
+  .right-sidebar {
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 15px;
+  }
+
+  /* ^Footer */
+
+  .footer {
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+.footer a {
+    color: #6c757d;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer .separator {
+    display: inline-block;
+    margin: 0 10px;
+    color: #6c757d;
+}
+
+
+
+  /* Global  */
+  .fs-sm{
+    font-size: 12px;
+
+  }
+  .text-nowrap{
+    text-wrap: nowrap;
+
+  }
+  
+  .fs-md{
+    font-size: 14px;
+    text-wrap: nowrap;
+  }
+  .media-side{
+    background-image: url('https://th.bing.com/th/id/R.2218aa45615a9a9f9e9e357672c29dcf?rik=tZVx2I7HWfwyjQ&pid=ImgRaw&r=0');
+    background-size: cover;
+    height: 100px;
+  }
+
+  i{
+    width: 15px;
+  }
+
+  .line{
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #c2bfbf;
+  }
+ 
+  .icon{
+    margin-left: -10px;    
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+ .min-vh-75{
+    height:76.6vh;
+  }
+
+  .text-clamp{
+    font-size: clamp(.5rem, -1.5rem + 8vw, 3rem);
+    text-wrap: nowrap;
+  }
+
+  .text-blue{
+    color: #0a65c0;
+  }
+
+  .nav-link{
+    transition: 400ms all;
+    color: #6c757d;
+    font-weight: 400 !important;
+  }
+
+  .nav-link:hover{
+    color: rgb(13, 13, 13);
+    font-weight: 600 !important;
+
+
+  }
+
+  .loading{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.307);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+  }
+
+
+
+/* !All section none for animation */
+#lSide,#main,#rSide{
+  display: none;
+}
+
+.text-midDark{
+  color: rgba(0, 0, 0, 0.534);
+}
+.text-midDark:hover{
+  color: black;
+}
+.post-btn{
+  transition: 400ms all;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.post-btn:hover{
+  background-color: #979a9d1c;
+}
+
+/* *LOading Animation */
+.homeLoad{
+  width: 100%;
+  height: 100Vh;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 999;
+ }
+ 
+.loading-line{
+  width: 200px;
+}
+.line{
+  width: 100%;
+  height: 2px;
+  background-color: #979a9d;
+}
+.line-blue{
+  display: block;
+  height: 2px;
+  width: 20%;
+  background-color: #0a65c0;
+  animation: loading-Width 600ms infinite alternate ;
+}
+@keyframes loading-Width{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+.fs-lg{
+  font-size: 70px ;
+}
